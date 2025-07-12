@@ -15,8 +15,10 @@ Proyek ini adalah game sederhana **Gunting-Batu-Kertas** berbasis web yang diban
 - **Tanpa backend** (tidak menggunakan database)
 
 ## 🚀 Cara Menjalankan Lokal
+
 ```bash
 git clone https://github.com/adamaryanto/gunting-batu-kertas-react-app.git
-cd NAMA_REPO_KAMU
+cd gunting-batu-kertas-react-app
 npm install
 npm run dev
+
