@@ -1,0 +1,166 @@
+/* HomePage.css */
+
+:root {
+  --primary: #2e2e2e;
+  --accent: #6c5ce7;
+  --background: #f4f4f4;
+  --white: #fff;
+  --gray: #777;
+  --radius: 12px;
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapperHomePage {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.wrapperHomePage h1 {
+  font-size: 2.8rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.wrapperOptionButton h2 {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+
+.wrapperChoice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+}
+
+.wrapperChoice h1 {
+  background-color: var(--accent);
+  color: var(--white);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.wrapperStatistic {
+  margin-top: 2rem;
+  background: #fafafa;
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid #e2e2e2;
+}
+
+.wrapperStatistic h3 {
+  margin: 0.5rem 0;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.wrapperBtnReset {
+  margin-top: 2.5rem;
+}
+
+/* Button styling */
+button {
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--accent);
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+button:hover {
+  background-color: #5e50c0;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.option-button {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--white);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.optionButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.option-button:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .wrapperHomePage {
+    padding: 1.5rem;
+  }
+
+  .wrapperChoice {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .wrapperHomePage h1 {
+    font-size: 2rem;
+  }
+
+  .optionButtonGroup {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  button,
+  .option-button {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .wrapperStatistic h3 {
+    font-size: 1rem;
+  }
+}
