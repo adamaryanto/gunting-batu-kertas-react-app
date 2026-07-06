@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Scissors, Hand, HandFist } from 'lucide-react';
 
-function ButtonOption({ setUserOption, options }) {
+function ButtonOption({ setUserOption }) {
   const choices = [
     { name: 'Gunting', icon: Scissors, value: 'scissors', color: 'from-pink-500 to-rose-500' },
     { name: 'Batu', icon: HandFist, value: 'rock', color: 'from-blue-500 to-cyan-500' },
