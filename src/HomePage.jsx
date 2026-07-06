@@ -194,7 +194,7 @@ function HomePage(props) {
         </motion.button>
 
         <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-accent to-primary drop-shadow-lg">
-          Gunting Batu Kertas
+          RPS Arena
         </h1>
         <p className="text-white/60 mt-2 text-lg">
           Difficulty: <span className={`font-bold uppercase ${difficultyColors[props.difficulty] || 'text-white'}`}>{props.difficulty}</span>
